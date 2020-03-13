@@ -1,6 +1,6 @@
 # googleFilesDownloader
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/alex2844/google-files-downloader/blob/master/googleFilesDownloader.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/alex2844/google-files-downloader/blob/master/googleFilesDownloader.ipynb 'Open In Colab')
 
 ## Скачивание файлов, торрентов и магнитов в Google Drive
 

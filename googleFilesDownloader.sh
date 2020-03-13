@@ -144,7 +144,7 @@ if [ -e "$hash.torrent" ]; then
 	rm $hash.torrent;
 fi
 if [ "${COMPRESS^^}" == "N" ]; then
-	mv ../$hash $DRIVE/;
+	mv ../$hash "$DRIVE/";
 else
 	zip -r "$DRIVE/$hash.zip" ./;
 	rm -r ../$hash;

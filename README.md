@@ -1,0 +1,20 @@
+# googleFilesDownloader
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/alex2844/google-files-downloader/blob/master/googleFilesDownloader.ipynb)
+
+## Скачивание файлов, торрентов и магнитов в Google Drive
+
+#### Подключение
+* Нажмите на значок с надписью 'Открыть в Colab'
+* В левой панели нажмите на 'Files'
+* Смонтируйте google drive ('Mount Drive')
+* Запустите (Runtime -> Run all)
+
+После завершения загрузки, загруженные файлы будут находиться на вашем выбранном диске в папке с именем 'googleFilesDownloader'
+
+#### Цели
+* Обойти ограничения интернет-провайдера
+* Доступность с любых устройств
+* Поддержка общих дисков
+
+## Downloads files, torrents and magnets to Google Drive

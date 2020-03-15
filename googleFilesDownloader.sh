@@ -6,12 +6,12 @@ if [ ! -e 'drive' ]; then
 fi
 cd drive;
 dirs=();
-dirs_my=(*);
+dirs_my=($(shopt -s nullglob; echo *));
 dirs_i=0;
 for dirname_my in "${dirs_my[@]}"; do
 	if [ "$dirname_my" == 'Shared drives' ]; then
-		dirs_=(Shared\ drives/*);
-		for dirname_shared in "${dirs_[@]}"; do
+		dirs_shared=($(shopt -s nullglob; echo Shared\ drives/*));
+		for dirname_shared in "${dirs_shared[@]}"; do
 			dirs+=("$dirname_shared");
 		done
 	else
@@ -45,7 +45,7 @@ fi;
 cd 'googleFilesDownloader';
 DRIVE=$(pwd);
 ls > /dev/null;
-torrent=(*.torrent);
+torrent=($(shopt -s nullglob; echo *.torrent));
 torrent_i=0;
 for torrentname in "${torrent[@]}"; do
 	if [ "$torrentname" == '*.torrents' ]; then

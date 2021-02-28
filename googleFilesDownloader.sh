@@ -15,6 +15,11 @@ for dirname_my in "${dirs_my[@]}"; do
 		for dirname_shared in "${dirs_shared[@]}"; do
 			dirs+=("$dirname_shared");
 		done
+	elif [ "$dirname_my" == 'Shareddrives' ]; then
+		dirs_shared=(Shareddrives/*);
+		for dirname_shared in "${dirs_shared[@]}"; do
+			dirs+=("$dirname_shared");
+		done
 	else
 		dirs+=("$dirname_my");
 	fi
